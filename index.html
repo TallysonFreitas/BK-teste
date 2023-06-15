@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho" class=" navbar sticky-top navbar-expand-lg ">
+        <div class="container">
+            <h1 class="fs-1">Burguer King</h1>
+
+            <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            
+            <nav id="menu" class="justify-content-end collapse navbar-collapse ">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link cor-font-title text-center pt-3 pb-3 fs-5 active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cor-font-title text-center pt-3 pb-3 fs-5" href="#cardapio">Cardapio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cor-font-title text-center pt-3 pb-3 fs-5" href="#appbk">App BK</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio" class="pb-5">
+            <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Spiderverse_1920x900_WEB.png?mtime=20230517110329&focal=none" alt="">
+                        <div class="carousel-caption mb-3">
+                            <button type="button" class="btn btn-bk fw-bold fs-5 pe-4 ps-4">Clique e Retire</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Choripan-ULTIMO_1920x900_WEB.png?mtime=20230517110334&focal=none" alt="">
+                        <div class="carousel-caption mb-3">
+                            <button type="button" class="btn btn-bk fw-bold fs-5 pe-4 ps-4">Clique e Retire</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="carousel-control-prev" data-bs-target="#carrossel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carrossel">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-slide-to="0" data-bs-target="#carrossel" class="active"></button>
+                        <button type="button" data-bs-slide-to="1" data-bs-target="#carrossel"></button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mt-5 cor-font-title text-center pt-3 pb-3">
+                        <div class="col-3"></div>
+                        <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                            <h1 class="text-center">Restaurantes próximos a voce</h1>
+                            <div class="mt-2 w-100">
+                                <label class="form-label text-center" for="">Buscar por endereco</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <h5 class="text-center mt-4">ou</h5>
+                            <h5 class="text-center mt-4">Encontre o BK mais próximo de você</h5>
+                            <p class="h6">Preencha seu endereço no campo acima ou busque por restaurantes próximos a você (lembre-se de ativar sua localização no navegador caso esteja desativada).</p>
+                            <button type="button" class="btn btn-bk ps-3 pe-3 w-50 mt-4 fs-5">Buscar restaurantes proximos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <section id="cardapio" class="redo">
+            <div id="carrossel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/frango-banner-cardapio-d.jpg?mtime=20210226103541&focal=none" alt="">
+                        <div class="carousel-caption mb-3">
+                            <button type="button" class="btn btn-bk fw-bold fs-5 pe-4 ps-4">Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/acompanhamentos-banner-cardapio-d.jpg?mtime=20210226103906&focal=none" alt="">
+                        <div class="carousel-caption mb-3">
+                            <button type="button" class="btn btn-bk fw-bold fs-5 pe-4 ps-4">Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/sobremesa-banner-cardapio-d.jpg?mtime=20210226103341&focal=none" alt="">
+                        <div class="carousel-caption mb-3">
+                            <button type="button" class="btn btn-bk fw-bold fs-5 pe-4 ps-4">Ver mais</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="carousel-control-prev" data-bs-target="#carrossel2" data-bs-slide="prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target="#carrossel2" data-bs-slide="next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carrossel2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carrossel2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carrossel2" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="display-3 cor-font-title cw text-center pt-3 pb-3">Cardapio</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="flex-column d-flex nav-pills nav">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aba1h" class="btn btn-bk fw-bold fs-4 mb-4 active">Sanduiches de Carne</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aba2h" class="btn btn-bk fw-bold fs-4 mb-4">Sanduiches Especiais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aba3h" class="btn btn-bk fw-bold fs-4 mb-4">Sanduiches de Frango e Vegetarianos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aba4h" class="btn btn-bk fw-bold fs-4 mb-4">Kids</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aba5h" class="btn btn-bk fw-bold fs-4 mb-4">Acompanhamentos</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="aba1h">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Spider_burger.png?mtime=20230516173943&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Spider Burguer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Bacon_com_BK_Cheddar.png?mtime=20230404233648&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Bacon com BK Cheddar</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Stacker_Duplo_Bacon-thumb-cupom-m-d.png?mtime=20220825142918&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Stacker Duplo Bacon</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Cheeseburger_duplo-thumb.png?mtime=20230202110227&focal=none" alt="">
+                                            <div class="card-footer w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Cheeseburger Duplo</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Spider_burger.png?mtime=20230516173943&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Spider Burguer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba2h">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Whopper_Choripan.png?mtime=20230516173120&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Whopper Choripan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Mega-Stacker-Cheddar-Empanado-1.0.png?mtime=20230302224847&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Mega Stacker Cheddar Empanado</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Mega-Stacker-Cheddar-Empanado-2.0.png?mtime=20230302225625&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Mega Stacker Cheddar</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Bacon_com_Mega_Stacker.png?mtime=20230404233651&focal=none" alt="">
+                                            <div class="card-footer w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Bacon com Mega Stacker</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Whopper-Furioso-thumb-cupom-m-d.png?mtime=20220916153854&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Whopper Furioso</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Mega-Stacker-atomico-3.0-thumb-cupom-m-d_2022-07-21-170135_cnnj.png?mtime=20220721170136&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Mega Stacker atomico 3</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba3h">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Spider_burger.png?mtime=20230516173943&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Spider Burguer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Bacon_com_BK_Cheddar.png?mtime=20230404233648&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Bacon com BK Cheddar</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Stacker_Duplo_Bacon-thumb-cupom-m-d.png?mtime=20220825142918&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Stacker Duplo Bacon</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Cheeseburger_duplo-thumb.png?mtime=20230202110227&focal=none" alt="">
+                                            <div class="card-footer w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Cheeseburger Duplo</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Spider_burger.png?mtime=20230516173943&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Spider Burguer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba4h">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/kids-burger-thumb.png?mtime=20210916101534&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Kids Burger</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/kids-burger-thumb-cupom-m-d.png?mtime=20220721170810&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">King Jr. Combo</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba5h">
+                                <div class="row">
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Balde-Batata-thumb.png?mtime=20210916163821&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Balde de Batata</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Batata-Furiosa-thumb_2021-09-16-164453_owas.png?mtime=20210916164455&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Batata Furiosa</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Batata-Frita-thumb.png?mtime=20210916164008&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Batata Frita</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Chicken-Granada.png?mtime=20230302223645&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Chicken Granada</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Batata_aranhaverso.png?mtime=20230516225718&focal=none" alt="">
+                                            <div class="card-footer w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Chicken do Aranhaverso</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4 mb-4">
+                                        <div class="card">
+                                            <img class="item-menu w-100 d-block" src="https://d3sn2rlrwxy0ce.cloudfront.net/Spider_burger.png?mtime=20230516173943&focal=none" alt="">
+                                            <div class="card-footer pb-2 pt-3 w-f">
+                                                <h4 class="text-center cor-font-title fs-3">Spider Burguer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="appbk">
+            <div class="container">
+                <div class="row fr">
+                    <div class="col-xxl-4 d-flex justify-content-center">
+                        <img src="https://d3sn2rlrwxy0ce.cloudfront.net/Mockup_HomeAppClubeBK.png?mtime=20211124095753&focal=none" alt="">
+                    </div>
+                    <div class="col-xxl-8 d-flex justify-content-center align-items-center flex-column ">
+                        <h2 class="text-center cor-font-title w-50 display-1 ">Baixe nosso App e tenha BK na palma da sua mao!</h2>
+                        <div class="text-center">
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=burgerking.com.br.appandroid&pli=1">
+                                <img src="https://d3sn2rlrwxy0ce.cloudfront.net/gplay_2021-01-12-145546.png?mtime=20210112115547&focal=none" alt="">
+                            </a>
+                            <a target="_blank" href="https://apps.apple.com/br/app/burger-king-brasil/id1295116265">
+                                <img src="https://d3sn2rlrwxy0ce.cloudfront.net/apple_2021-01-12-145551.png?mtime=20210112115552&focal=none" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="cw d-flex flex-column align-items-center">
+        <h2 class="cor-font-title cw display-5 text-center pt-5 pb-3">Burguer King</h2>
+        <h5 class="cor-font-title cw h4mb-0 border-top text-center pt-2">Compartilhe algo delicioso</h5>
+        <ul class="nav social-links pb-5">
+            <li>
+                <a href="#">
+                    <i class="bi bi-instagram cw fs-2"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="ms-3 me-3">
+                    <i class="bi bi-facebook cw fs-2"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-twitter cw fs-2"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+"></script>
+<script src="main.js"></script>
+</body>
+</html>

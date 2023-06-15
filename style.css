@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bubblegum+Sans&family=Flamenco&family=Rowdies&display=swap');
+
+:root{
+    --font-text:'Bubblegum Sans';
+    --font-title:'Acme';
+}
+
+header h1{
+    font-family: 'Rowdies';
+    color: #502314;
+}
+
+header,section, .item-menu{
+    background-color: #F5EBDC;
+}
+
+.cor-font-title, .cor-font-title, .nav-item:hover a,.nav-link:focus, .nav-link:hover{
+    color: #502314;
+    font-family: var(--font-title);
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #fff;
+    color: #502314;
+}
+
+.btn-bk{
+    background-color: #d62300;
+    color:#f5ebdc;
+}
+
+.btn-bk:hover{
+    background-color: #d62300;
+    color:  #dfc6a2;
+}
+
+section.redo{
+    background-color: #d62300;
+}
+
+.cw{
+    color: white;
+}
+
+.btn-bk.active{
+    background-color: white;
+}
+
+.w-f{
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.h230{
+    height: 230px;
+}
+
+.position-sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+footer{
+    background-color: rgb(80, 35, 20);
+}
+
+@media (max-width:1400px){
+    .fr{
+        flex-direction: column-reverse;
+    }
+}
