@@ -66,8 +66,16 @@ footer{
     background-color: rgb(80, 35, 20);
 }
 
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @media (max-width:1400px){
     .fr{
         flex-direction: column-reverse;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
