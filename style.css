@@ -75,7 +75,4 @@ body{
     .fr{
         flex-direction: column-reverse;
     }
-    body{
-        overflow-x: hidden;
-    }
 }
